@@ -75,3 +75,14 @@ def draw_line_image(image, point1, point2, color, thickness=5):
     res = image.copy()
     cv2.line(res, point1, point2, color, thickness)
     return res
+
+
+def detect_objects_by_haarcascade(image, haarcascade_file, scale_factor=1.1, min_neighbors=5, min_size=(10, 10)):
+    gray = convert_to_gray(image)
+    face_cascade = cv2.CascadeClassifier(haarcascade_file)
+    result = face_cascade.detectMultiScale(gray, scaleFactor=scale_factor, minNeighbors=min_neighbors, minSize=min_size)
+    return result
+
+
+def save_image(filename, image):
+    cv2.imwrite(filename, image)
