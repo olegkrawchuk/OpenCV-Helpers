@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f4f814-a663-452c-b3e5-90711d24212a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/chz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_alt_tree.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/video_detecting_faces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencv.py" beforeDir="false" afterPath="$PROJECT_DIR$/opencv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/opencv_helpers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/opencv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+            <state relative-caret-position="221">
+              <caret line="25" column="113" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="113" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -28,10 +28,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/video_detecting_faces.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="25" column="56" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/opencv_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="196">
+              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -41,18 +53,26 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/opencv_helpers.py" />
         <option value="$PROJECT_DIR$/opencv.py" />
+        <option value="$PROJECT_DIR$/video_detecting_faces.py" />
+        <option value="$PROJECT_DIR$/opencv_helpers.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1260" />
@@ -95,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.opencv">
+  <component name="RunManager" selected="Python.video_detecting_faces">
     <configuration name="opencv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="opencv-helpers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,8 +158,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="video_detecting_faces" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="opencv-helpers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video_detecting_faces.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.video_detecting_faces" />
         <item itemvalue="Python.opencv" />
         <item itemvalue="Python.opencv_helpers" />
       </list>
@@ -159,7 +201,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
@@ -185,20 +227,30 @@
     <entry file="file://$PROJECT_DIR$/img.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/opencv_helpers.py">
+    <entry file="file://$PROJECT_DIR$/opencv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="221">
+          <caret line="25" column="113" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="113" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opencv.py">
+    <entry file="file://$PROJECT_DIR$/video_detecting_faces.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencv_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

@@ -84,5 +84,6 @@ def detect_objects_by_haarcascade(image, haarcascade_file, scale_factor=1.1, min
     return result
 
 
+
 def save_image(filename, image):
     cv2.imwrite(filename, image)

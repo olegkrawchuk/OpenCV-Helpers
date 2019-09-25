@@ -11,7 +11,8 @@ if not opencv_helpers.is_read(image):
     exit(0)
 
 haarcascades_path = os.path.join(os.getcwd(), 'haarcascades')
-files = [i for i in os.listdir(haarcascades_path) if i.lower().startswith('haarcascade_') != -1 and os.path.isfile(os.path.join(haarcascades_path, i))]
+files = [i for i in os.listdir(haarcascades_path) if i.lower().startswith('haarcascade_') != -1
+         and os.path.isfile(os.path.join(haarcascades_path, i))]
 
 for i, file in enumerate(files, start=1):
     fullpath = os.path.join(haarcascades_path, file)
