@@ -2,7 +2,7 @@ import cv2
 import opencv_helpers
 import os
 
-image_filename = 'IMG_2581.JPG'
+image_filename = 'IMG_0777.JPG'
 
 image = cv2.imread(image_filename)
 
@@ -17,19 +17,15 @@ for i, file in enumerate(files, start=1):
     fullpath = os.path.join(haarcascades_path, file)
     print(i, fullpath)
 
-    faces = opencv_helpers.detect_objects_by_haarcascade(image, fullpath, 1.3, 3, (50, 50))
+    faces = opencv_helpers.detect_objects_by_haarcascade(image, fullpath, 1.1, 6, (100, 100))
     print('Found', len(faces))
 
     image_result = image.copy()
     for x, y, w, h in faces:
-        image_result = opencv_helpers.draw_rectangle_image(image_result, (x, y), (x + w, y + h), (0, 0, 255), 10)
+        image_result = opencv_helpers.draw_rectangle_image(image_result, (x, y), (x + w, y + h), (0, 0, 255), 15)
 
     opencv_helpers.show_image(image_result, file)
-
-    file.split('.')
-    cv2.imwrite(file.split('.')[0] + '.' + image_filename.split('.')[1], image_result)
-
-
+    # opencv_helpers.save_image(file.split('.')[0] + '.' + image_filename.split('.')[1], image_result)
 
 opencv_helpers.pause()
 opencv_helpers.close_all_images()
