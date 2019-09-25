@@ -57,13 +57,21 @@ def convert_to_black_white(image):
     return threshold_image
 
 
-def blur_image(image, strong_blur):
+def blur_image(image, strength_blur):
     # если число нечетное отнимаем 1 (делаем его нечетным)
-    if strong_blur % 2 == 0:
-        strong_blur -= 1
+    if strength_blur % 2 == 0:
+        strength_blur -= 1
 
-    return cv2.GaussianBlur(image, (strong_blur, strong_blur), 0)
-
-
+    return cv2.GaussianBlur(image, (strength_blur, strength_blur), 0)
 
 
+def draw_rectangle_image(image, point1, point2, color, thickness=5):
+    res = image.copy()
+    cv2.rectangle(res, point1, point2, color, thickness)
+    return res
+
+
+def draw_line_image(image, point1, point2, color, thickness=5):
+    res = image.copy()
+    cv2.line(res, point1, point2, color, thickness)
+    return res
