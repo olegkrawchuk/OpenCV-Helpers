@@ -2,7 +2,7 @@ import cv2
 import opencv_helpers
 import os
 
-image_filename = 'IMG_0777.JPG'
+image_filename = 'faces.jpeg'
 
 image = cv2.imread(image_filename)
 
@@ -18,7 +18,7 @@ for i, file in enumerate(files, start=1):
     fullpath = os.path.join(haarcascades_path, file)
     print(i, fullpath)
 
-    faces = opencv_helpers.detect_objects_by_haarcascade(image, fullpath, 1.1, 6, (100, 100))
+    faces = opencv_helpers.detect_objects_by_haarcascade(image, fullpath, 1.3, 10, (100, 100))
     print('Found', len(faces))
 
     image_result = image.copy()
